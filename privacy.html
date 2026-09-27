@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Kala Senja Publisher</title>
+<meta name="description" content="Kebijakan Privasi alat internal Hilman Studio: data apa yang diambil dari TikTok, bagaimana disimpan, dan cara mencabut akses.">
+<style>
+  :root { --paper:#E9D5C0; --night:#22223B; --terracotta:#C97C5D; --dusk:#4A4E69; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--night); color:var(--paper);
+         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem }
+  a { color:var(--terracotta) }
+  h1 { font-size:1.75rem; margin:0 0 .3rem; letter-spacing:-.01em }
+  p.meta { color:var(--dusk); filter:brightness(1.7); margin:0 0 2.5rem; font-size:.92rem }
+  h2 { font-size:1.12rem; margin:2.5rem 0 .6rem; color:#fff }
+  ul { padding-left:1.2rem } li { margin:.35rem 0 }
+  code { background:rgba(233,213,192,.09); padding:.1rem .35rem; border-radius:4px; font-size:.92em }
+  hr { border:0; border-top:1px solid rgba(233,213,192,.14); margin:3rem 0 1.5rem }
+  footer { color:var(--dusk); filter:brightness(1.6); font-size:.9rem }
+  .en { color:var(--dusk); filter:brightness(1.6); font-size:.95rem; font-style:italic }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kebijakan Privasi</h1>
+  <p class="meta">Kala Senja Publisher — alat internal Hilman Studio<br>
+     Berlaku sejak 27 September 2026 · <a href="./">kembali</a></p>
+
+  <h2>1. Ringkasnya</h2>
+  <p>Aplikasi ini hanya mengakses <strong>akun TikTok milik kami sendiri</strong> (artis Kala Senja).
+     Kami <strong>tidak mengumpulkan data pengguna TikTok lain</strong>, tidak menjual data apa pun, dan tidak
+     memakai data untuk iklan. Tidak ada pengguna pihak ketiga di aplikasi ini.</p>
+
+  <h2>2. Data yang diakses</h2>
+  <p>Melalui TikTok API resmi, dengan izin (scope) berikut:</p>
+  <ul>
+    <li><code>user.info.basic</code> — nama tampilan, nama pengguna, dan foto profil akun kami sendiri.</li>
+    <li><code>user.info.stats</code> — jumlah pengikut, jumlah mengikuti, jumlah suka, jumlah video pada akun kami sendiri.</li>
+    <li><code>video.list</code> — daftar video yang kami unggah sendiri beserta statistiknya
+        (tayangan, suka, komentar, bagikan).</li>
+  </ul>
+  <p>Bila kelak izin unggah (Content Posting API) diaktifkan, aplikasi hanya mengunggah konten milik kami sendiri
+     ke akun kami sendiri.</p>
+
+  <h2>3. Data yang TIDAK kami ambil</h2>
+  <ul>
+    <li>Data profil, video, atau statistik pengguna TikTok lain.</li>
+    <li>Komentar, pesan pribadi, atau daftar kontak siapa pun.</li>
+    <li>Lokasi, kontak telepon, atau data perangkat pengunjung.</li>
+  </ul>
+  <p>Halaman ini sendiri tidak memakai cookie, tidak memasang analitik, dan tidak memuat pelacak pihak ketiga.</p>
+
+  <h2>4. Tujuan penggunaan</h2>
+  <p>Satu-satunya tujuan: memantau performa karya musik kami sendiri (berapa tayangan sebuah video,
+     bagaimana pertumbuhan pengikut) supaya kami bisa memutuskan konten berikutnya, dan menjadwalkan
+     unggahan konten kami sendiri.</p>
+
+  <h2>5. Penyimpanan &amp; keamanan</h2>
+  <ul>
+    <li>Data statistik disimpan di server pribadi milik pemilik studio, tidak dibagikan ke layanan lain.</li>
+    <li>Token akses OAuth disimpan dalam berkas dengan izin baca terbatas (hanya pemilik sistem),
+        di luar repositori kode publik.</li>
+    <li>Hanya pemilik studio yang memiliki akses ke server tersebut.</li>
+  </ul>
+
+  <h2>6. Berbagi data</h2>
+  <p>Kami tidak membagikan, menjual, menyewakan, atau menukarkan data kepada pihak mana pun.
+     Tidak ada pengiklan, tidak ada broker data, tidak ada mitra analitik.</p>
+
+  <h2>7. Penyimpanan &amp; penghapusan</h2>
+  <p>Statistik disimpan selama masih berguna untuk perbandingan antarwaktu. Pemilik dapat menghapusnya kapan saja.
+     Akses aplikasi dapat dicabut kapan pun melalui
+     <em>TikTok → Pengaturan dan privasi → Keamanan dan izin → Kelola aplikasi</em>; setelah dicabut,
+     token yang tersimpan tidak lagi berlaku dan dihapus dari server.</p>
+
+  <h2>8. Anak-anak</h2>
+  <p>Aplikasi ini tidak ditujukan untuk anak-anak dan tidak mengumpulkan data dari siapa pun,
+     termasuk anak-anak.</p>
+
+  <h2>9. Perubahan kebijakan</h2>
+  <p>Bila cakupan data yang diakses berubah, halaman ini diperbarui beserta tanggal berlakunya.</p>
+
+  <h2>10. Kontak</h2>
+  <p>Pertanyaan atau permintaan terkait data:
+     <a href="mailto:kalasenjamusic@gmail.com">kalasenjamusic@gmail.com</a></p>
+
+  <hr>
+  <p class="en"><strong>English summary.</strong> This internal tool accesses only our own TikTok account
+     (the artist Kala Senja), using <code>user.info.basic</code>, <code>user.info.stats</code> and
+     <code>video.list</code> to read our own profile and video statistics. We collect no data about any other
+     TikTok user, use no cookies or third-party trackers on this page, and never sell or share data. Data is kept
+     on a private server; OAuth tokens are stored in permission-restricted files outside any public repository.
+     Access can be revoked at any time in TikTok → Settings and privacy → Security and permissions → Manage app
+     permissions, after which stored tokens are deleted. Contact: kalasenjamusic@gmail.com</p>
+
+  <footer>Hilman Studio · Kala Senja · <a href="./">Dokumen hukum</a></footer>
+</main>
+</body>
+</html>
